@@ -14,7 +14,7 @@ const CreatePost = () => {
   const [redirect,setRedirect] = useState(false)
   async function handleSubmit(event){
     event.preventDefault()
-    const response= await fetch('http://localhost:5000/create',{
+    const response= await fetch('https://blog-application-api-wxvl.onrender.com/create',{
         method:'POST',
         credentials:'include',
         body:JSON.stringify({title,summary,description,imageUrl,userName}),

@@ -16,7 +16,7 @@ const EditPost = () => {
   const [redirect,setRedirect] = useState(false)
 
   useEffect(()=>{
-    fetch(`http://localhost:5000/post/${id}`,{
+    fetch(`https://blog-application-api-wxvl.onrender.com/post/${id}`,{
         credentials:'include',
     }).then(response=>{
         response.json().then(postInfo=>{
@@ -30,7 +30,7 @@ const EditPost = () => {
   },[])
   async function handleSubmit(event){
     event.preventDefault();
-    fetch(`http://localhost:5000/edit/${id}`,{
+    fetch(`https://blog-application-api-wxvl.onrender.com/edit/${id}`,{
         method: 'POST',
         body:JSON.stringify({title,author,description,imageUrl,summary}),
         credentials:'include',
