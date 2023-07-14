@@ -56,7 +56,7 @@ const BlogList = () => {
   
   return (
     <div>
-      <div id="alertPlaceholder" className="my-2" style={{width:"800px"}}></div>
+      <div id="alertPlaceholder" className="my-2 container-fluid" style={{maxWidth:"800px"}}></div>
       {blogs.length>0 && 
         <div className="d-flex flex-column justify-content-center">
           {

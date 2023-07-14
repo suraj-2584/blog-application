@@ -14,7 +14,7 @@ const BlogPreview = ({title,summary,description,imageUrl,createdAt,author,_id}) 
   
   return (
     <div>
-      <div className="card my-3" style={{width:"800px"}}>
+      <div className="card my-3 container-fluid" style={{maxWidth:"800px"}}>
             <img className="card-img-top" style={{maxHeight:"430px"}} src={imageUrl}></img>
             <div className="card-body">
               <h5 className="card-title">{title}</h5>

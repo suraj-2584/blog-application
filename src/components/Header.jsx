@@ -36,7 +36,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid px-5 mx-5 d-flex justify-content-between">
             <div className="navbar-brand">
-              <Link to="/">Blog</Link>
+              <Link to="/">Blogify</Link>
             </div>
             {username && (
               <>
